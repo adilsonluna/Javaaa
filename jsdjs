@@ -1,0 +1,31 @@
+import java.util.Random;
+import java.util.Scanner;
+
+
+public class numeros{
+
+	public static void main(String[] args) {
+	Scanner adisl = new Scanner(System.in);
+		Random adisl2 = new Random();
+		int numero;
+		System.out.println("Digite um numero");
+		numero = adisl.nextInt();
+		int numero2 = adisl2.nextInt(99)+1;
+		for (int i = 1; numero2==numero; i++) { //incremento = a i=i+1 
+		if (numero2>numero){
+			System.out.println(" O Numero é maior, numeros de tentativas " +i);
+		}else if (numero2<numero) {
+			System.out.println(" O Numero é menor, numeros de tentativas " +i);
+		}
+			else {
+				System.out.println("Parabéns vc acertou, o numero é : "+numero2);
+			}
+		}
+	}
+}
+
+	
+		
+			
+		//System.out.println("Adilson "+i);
+		//System.out.println(numero+" x "+i+ " = "+(numero*i));
